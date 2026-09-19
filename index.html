@@ -1,0 +1,1864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shri RGP Gujrati Professional Institute</title>
+
+<!-- Font Awesome - Instagram / LinkedIn / Other Icons -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f6f8ff;
+    color:#18233a;
+    overflow-x:hidden;
+}
+
+:root{
+    --blue:#173b8f;
+    --blue2:#315bc4;
+    --orange:#f39c12;
+    --dark:#0b1d43;
+    --white:#fff;
+}
+
+/* ================= NAVBAR ================= */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+    background:rgba(255,255,255,.94);
+    backdrop-filter:blur(15px);
+    box-shadow:0 5px 25px rgba(0,0,0,.08);
+}
+
+.navbar{
+    max-width:1250px;
+    margin:auto;
+    padding:13px 25px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid var(--orange);
+}
+
+.logo h2{
+    color:var(--blue);
+    font-size:17px;
+    line-height:1.2;
+}
+
+.logo span{
+    color:#666;
+    font-size:11px;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#1b2a49;
+    font-weight:600;
+    font-size:14px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--orange);
+}
+
+.menu{
+    display:none;
+    font-size:26px;
+    color:var(--blue);
+    cursor:pointer;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:100vh;
+    padding:150px 8% 80px;
+    display:flex;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+    background:
+    linear-gradient(120deg,rgba(10,31,75,.94),rgba(36,83,177,.88)),
+    url("https://srgpgpi.in/wp-content/uploads/2025/04/DSC_1215.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    border-radius:50%;
+    background:rgba(243,156,18,.18);
+    right:-100px;
+    top:-100px;
+    animation:float 6s ease-in-out infinite;
+}
+
+.hero-content{
+    max-width:850px;
+    color:white;
+    position:relative;
+    z-index:2;
+    animation:slideLeft 1s ease;
+}
+
+.badge{
+    display:inline-block;
+    background:rgba(255,255,255,.15);
+    border:1px solid rgba(255,255,255,.3);
+    padding:10px 18px;
+    border-radius:30px;
+    margin-bottom:20px;
+    font-size:13px;
+}
+
+.hero h1{
+    font-size:55px;
+    line-height:1.15;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#ffd36a;
+}
+
+.hero p{
+    font-size:18px;
+    max-width:720px;
+    color:#e9efff;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    padding:14px 25px;
+    border-radius:30px;
+    font-weight:600;
+    margin-right:10px;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:var(--orange);
+    color:white;
+}
+
+.btn-primary:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(243,156,18,.4);
+}
+
+.btn-light{
+    background:white;
+    color:var(--blue);
+}
+
+.btn-light:hover{
+    transform:translateY(-4px);
+}
+
+/* ================= STATS ================= */
+
+.stats{
+    max-width:1100px;
+    margin:-55px auto 70px;
+    position:relative;
+    z-index:10;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    padding:0 20px;
+}
+
+.stat{
+    background:white;
+    padding:30px 20px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 12px 35px rgba(25,55,120,.12);
+    transition:.4s;
+}
+
+.stat:hover{
+    transform:translateY(-10px);
+}
+
+.stat i{
+    font-size:28px;
+    color:var(--orange);
+    margin-bottom:10px;
+}
+
+.stat h2{
+    color:var(--blue);
+    font-size:32px;
+}
+
+/* ================= COMMON ================= */
+
+section{
+    padding:90px 7%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title small{
+    color:var(--orange);
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.section-title h2{
+    font-size:38px;
+    color:var(--dark);
+    margin:8px 0;
+}
+
+.section-title p{
+    color:#667085;
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+    max-width:1200px;
+    margin:auto;
+}
+
+.about-img{
+    position:relative;
+}
+
+.about-img img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    border-radius:25px;
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+}
+
+.about-img::after{
+    content:"";
+    position:absolute;
+    width:100px;
+    height:100px;
+    border:8px solid var(--orange);
+    border-radius:20px;
+    right:-20px;
+    bottom:-20px;
+    z-index:-1;
+}
+
+.about-text h2{
+    font-size:35px;
+    color:var(--blue);
+    margin-bottom:15px;
+}
+
+.about-text p{
+    color:#667085;
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+.points{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    margin-top:20px;
+}
+
+.points div{
+    background:#eef3ff;
+    padding:12px;
+    border-radius:10px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.points i{
+    color:#2baa66;
+    margin-right:6px;
+}
+
+/* ================= COURSES ================= */
+
+.courses{
+    background:#eef3ff;
+}
+
+.course-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:20px;
+}
+
+.course-card{
+    background:white;
+    padding:30px 20px;
+    text-align:center;
+    border-radius:20px;
+    cursor:pointer;
+    transition:.4s;
+    border-bottom:4px solid transparent;
+}
+
+.course-card:hover{
+    transform:translateY(-12px);
+    border-color:var(--orange);
+    box-shadow:0 15px 35px rgba(23,59,143,.15);
+}
+
+.course-card .icon{
+    width:70px;
+    height:70px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:20px;
+    background:#edf2ff;
+    color:var(--blue);
+    font-size:30px;
+    margin-bottom:18px;
+}
+
+.course-card h3{
+    color:var(--blue);
+    margin-bottom:8px;
+}
+
+.course-card p{
+    font-size:13px;
+    color:#777;
+}
+
+/* ================= COURSE MODAL ================= */
+
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.7);
+    z-index:2000;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.modal-box{
+    background:white;
+    max-width:650px;
+    width:100%;
+    padding:35px;
+    border-radius:25px;
+    position:relative;
+    animation:zoom .3s ease;
+}
+
+.close{
+    position:absolute;
+    right:20px;
+    top:15px;
+    font-size:28px;
+    cursor:pointer;
+    color:#555;
+}
+
+.modal-box h2{
+    color:var(--blue);
+    margin-bottom:10px;
+}
+
+.subjects{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    margin-top:20px;
+}
+
+.subjects div{
+    padding:13px;
+    background:#eef3ff;
+    border-radius:10px;
+    font-size:14px;
+}
+
+/* ================= GALLERY ================= */
+
+.gallery{
+    max-width:1250px;
+    margin:auto;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.gallery-item{
+    height:220px;
+    overflow:hidden;
+    border-radius:18px;
+    cursor:pointer;
+    box-shadow:0 8px 25px rgba(0,0,0,.1);
+}
+
+.gallery-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.12);
+}
+
+/* ================= CLASSROOM ================= */
+
+.class-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.class-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.class-card:hover{
+    transform:translateY(-8px);
+}
+
+.class-card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.class-info{
+    padding:20px;
+}
+
+.class-info h3{
+    color:var(--blue);
+}
+
+.room{
+    display:inline-block;
+    margin-top:8px;
+    background:#fff1d9;
+    color:#b86b00;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+/* ================= FACULTY ================= */
+
+.faculty{
+    background:#eef3ff;
+}
+
+.faculty-grid{
+    max-width:1250px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:22px;
+}
+
+.teacher{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    text-align:center;
+    transition:.4s;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.teacher:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 40px rgba(23,59,143,.16);
+}
+
+.teacher img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.teacher-info{
+    padding:18px;
+}
+
+.teacher-info h3{
+    color:var(--blue);
+    font-size:17px;
+}
+
+.designation{
+    color:var(--orange);
+    font-size:13px;
+    font-weight:600;
+    margin:4px 0 10px;
+}
+
+.teacher-info p{
+    color:#667085;
+    font-size:12px;
+    line-height:1.7;
+}
+
+/* ================= ADMISSION ================= */
+
+.admission{
+    background:
+    linear-gradient(120deg,rgba(15,48,113,.96),rgba(45,91,195,.94)),
+    url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+.admission-box{
+    max-width:1000px;
+    margin:auto;
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 20px 60px rgba(0,0,0,.2);
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+}
+
+.input{
+    width:100%;
+    padding:14px 16px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    font-family:inherit;
+}
+
+.input:focus{
+    border-color:var(--blue);
+}
+
+.full{
+    grid-column:1/-1;
+}
+
+textarea{
+    resize:none;
+    min-height:110px;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    background:#fff;
+}
+
+.contact-grid{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.contact-card{
+    text-align:center;
+    padding:30px;
+    border-radius:20px;
+    background:#f6f8ff;
+}
+
+.contact-card i{
+    font-size:30px;
+    color:var(--orange);
+    margin-bottom:12px;
+}
+
+.contact-card h3{
+    color:var(--blue);
+    margin-bottom:8px;
+}
+
+.contact-card p{
+    color:#667085;
+    font-size:14px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#091a3d;
+    color:white;
+    padding:50px 7% 25px;
+}
+
+.footer-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:40px;
+}
+
+footer h2{
+    margin-bottom:12px;
+}
+
+footer p{
+    color:#c6d0e5;
+    line-height:1.8;
+    font-size:14px;
+}
+
+footer h3{
+    margin-bottom:15px;
+}
+
+.footer-links{
+    list-style:none;
+}
+
+.footer-links li{
+    margin:8px 0;
+}
+
+.footer-links a{
+    color:#c6d0e5;
+    text-decoration:none;
+}
+
+.social-links{
+    display:flex;
+    gap:12px;
+    margin-top:20px;
+}
+
+.social-links a{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:white;
+    color:var(--blue);
+    font-size:21px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.social-links a:hover{
+    background:var(--orange);
+    color:white;
+    transform:translateY(-6px) rotate(5deg);
+}
+
+.copyright{
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,.15);
+    margin-top:35px;
+    padding-top:20px;
+    color:#aab5cc;
+    font-size:13px;
+}
+
+/* ================= TOP BUTTON ================= */
+
+.top{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    border:none;
+    background:var(--orange);
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+    z-index:1000;
+    box-shadow:0 8px 25px rgba(0,0,0,.2);
+}
+
+/* ================= ANIMATIONS ================= */
+
+@keyframes float{
+    0%,100%{transform:translateY(0)}
+    50%{transform:translateY(25px)}
+}
+
+@keyframes slideLeft{
+    from{opacity:0;transform:translateX(-80px)}
+    to{opacity:1;transform:translateX(0)}
+}
+
+@keyframes zoom{
+    from{opacity:0;transform:scale(.8)}
+    to{opacity:1;transform:scale(1)}
+}
+
+.reveal{
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1000px){
+
+    .course-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .faculty-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .gallery-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+}
+
+@media(max-width:768px){
+
+    .nav-links{
+        position:absolute;
+        top:80px;
+        left:0;
+        width:100%;
+        background:white;
+        display:none;
+        flex-direction:column;
+        padding:25px;
+        box-shadow:0 10px 25px rgba(0,0,0,.1);
+    }
+
+    .nav-links.show{
+        display:flex;
+    }
+
+    .menu{
+        display:block;
+    }
+
+    .stats{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .about{
+        grid-template-columns:1fr;
+    }
+
+    .course-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .class-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .faculty-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero{
+        padding:140px 7% 80px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+}
+
+@media(max-width:500px){
+
+    .logo h2{
+        font-size:13px;
+    }
+
+    .logo img{
+        width:45px;
+        height:45px;
+    }
+
+    .stats{
+        grid-template-columns:1fr;
+    }
+
+    .course-grid,
+    .gallery-grid,
+    .class-grid,
+    .faculty-grid{
+        grid-template-columns:1fr;
+    }
+
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .full{
+        grid-column:auto;
+    }
+
+    .subjects{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    section{
+        padding:65px 5%;
+    }
+}
+
+/* ================= ACCESSIBILITY & UX IMPROVEMENTS ================= */
+html{scroll-padding-top:85px;}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px;}
+button,.course-card,.gallery-item{ -webkit-tap-highlight-color:transparent; }
+button{font-family:inherit;}
+.modal.is-open{display:flex;}
+body.modal-open{overflow:hidden;}
+@media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+<nav class="navbar">
+
+<div class="logo">
+<img src="https://srgpgpi.in/wp-content/uploads/2025/04/DSC_1215.jpg" alt="SHRI SRPG GUJARATI PROFESSIONAL INSTITUTE (INDORE)" width="55" height="55">
+<div>
+<h2>SHRI SRPG GUJARATI</h2>
+<span>PROFESSIONAL INSTITUTE (INDORE)</span>
+</div>
+</div>
+
+<ul class="nav-links" id="navLinks">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#classes">Classes</a></li>
+<li><a href="#faculty">Faculty</a></li>
+<li><a href="#admission">Admission</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<button class="menu" type="button" aria-label="Open navigation menu" aria-controls="navLinks" aria-expanded="false" onclick="toggleMenu()">
+<i class="fa-solid fa-bars"></i>
+</button>
+
+</nav>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="badge">
+<i class="fa-solid fa-graduation-cap"></i>
+&nbsp; Excellence in Professional Education
+</div>
+
+<h1>
+WELCOME TO <span>SHRI SRPG GUJARATI</span> PROFESSIONAL INSTITUTE
+</h1>
+
+<p>
+Build your future with quality education, experienced faculty,
+modern classrooms, professional courses and a vibrant campus life.
+</p>
+
+<a href="#courses" class="btn btn-primary">
+Explore Courses
+</a>
+
+<a href="#admission" class="btn btn-light">
+Admission Inquiry
+</a>
+
+</div>
+</section>
+
+
+<!-- ================= STATS ================= -->
+
+<div class="stats reveal">
+
+<div class="stat">
+<i class="fa-solid fa-book-open"></i>
+<h2>5+</h2>
+<p>Professional Courses</p>
+</div>
+
+<div class="stat">
+<i class="fa-solid fa-chalkboard-user"></i>
+<h2>20+</h2>
+<p>Faculty Members</p>
+</div>
+
+<div class="stat">
+<i class="fa-solid fa-users"></i>
+<h2>1000+</h2>
+<p>Students</p>
+</div>
+
+<div class="stat">
+<i class="fa-solid fa-trophy"></i>
+<h2>25+</h2>
+<p>Years of Excellence</p>
+</div>
+
+</div>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+<div class="section-title reveal">
+<small>ABOUT US</small>
+<h2>Learn. Grow. Succeed.</h2>
+<p>Creating professionals for tomorrow.</p>
+</div>
+
+<div class="about reveal">
+
+<div class="about-img">
+<img src="https://srgpgpi.in/wp-content/uploads/2025/04/DSC_1215.jpg" alt="Shri RGP Gujrati Professional Institute campus" loading="lazy">
+</div>
+
+<div class="about-text">
+
+<h2>Shri RGP Gujrati Professional Institute</h2>
+
+<p>
+Our institute focuses on providing professional education,
+practical knowledge and a supportive learning environment
+for students.
+</p>
+
+<p>
+Students get opportunities to develop academic knowledge,
+communication skills, leadership qualities and technical
+skills required for their careers.
+</p>
+
+<div class="points">
+
+<div><i class="fa-solid fa-circle-check"></i> Quality Education</div>
+<div><i class="fa-solid fa-circle-check"></i> Experienced Faculty</div>
+<div><i class="fa-solid fa-circle-check"></i> Modern Classes</div>
+<div><i class="fa-solid fa-circle-check"></i> Career Development</div>
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- ================= COURSES ================= -->
+
+<section class="courses" id="courses">
+
+<div class="section-title reveal">
+<small>OUR COURSES</small>
+<h2>Professional Programs</h2>
+<p>Click on any course to see subjects.</p>
+</div>
+
+<div class="course-grid reveal">
+
+<div class="course-card" onclick="openCourse('BCA')">
+<div class="icon"><i class="fa-solid fa-code"></i></div>
+<h3>BCA</h3>
+<p>Bachelor of Computer Applications</p>
+</div>
+
+<div class="course-card" onclick="openCourse('BBA')">
+<div class="icon"><i class="fa-solid fa-briefcase"></i></div>
+<h3>BBA</h3>
+<p>Bachelor of Business Administration</p>
+</div>
+
+<div class="course-card" onclick="openCourse('BCOM')">
+<div class="icon"><i class="fa-solid fa-calculator"></i></div>
+<h3>B.Com</h3>
+<p>Bachelor of Commerce</p>
+</div>
+
+<div class="course-card" onclick="openCourse('MBA')">
+<div class="icon"><i class="fa-solid fa-chart-line"></i></div>
+<h3>MBA</h3>
+<p>Master of Business Administration</p>
+</div>
+
+<div class="course-card" onclick="openCourse('MCA')">
+<div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
+<h3>MCA</h3>
+<p>Master of Computer Applications</p>
+</div>
+
+</div>
+</section>
+
+
+<!-- COURSE MODAL -->
+
+<div class="modal" id="courseModal" role="dialog" aria-modal="true" aria-labelledby="courseTitle">
+
+<div class="modal-box">
+
+<button class="close" type="button" aria-label="Close course details" onclick="closeCourse()">&times;</button>
+
+<h2 id="courseTitle"></h2>
+
+<p>Major Subjects</p>
+
+<div class="subjects" id="subjectList"></div>
+
+</div>
+</div>
+
+
+<!-- ================= ANNUAL FUNCTION ================= -->
+
+<section id="gallery">
+
+<div class="section-title reveal">
+<small>COLLEGE LIFE</small>
+<h2>Annual Function</h2>
+<p>Memories and celebrations of our campus.</p>
+</div>
+
+<div class="gallery-grid reveal">
+
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=900&q=80" alt="College campus image 1" loading="lazy"></div>
+
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=80" alt="College campus image 2" loading="lazy"></div>
+
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=900&q=80" alt="College campus image 3" loading="lazy"></div>
+
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=900&q=80" alt="College campus image 4" loading="lazy"></div>
+
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1472653431158-6364773b2a56?auto=format&fit=crop&w=900&q=80" alt="College campus image 5" loading="lazy"></div>
+
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=900&q=80" alt="College campus image 6" loading="lazy"></div>
+
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=900&q=80" alt="College campus image 7" loading="lazy"></div>
+
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=900&q=80" alt="College campus image 8" loading="lazy"></div>
+
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=900&q=80" alt="College campus image 9" loading="lazy"></div>
+
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=900&q=80" alt="College campus image 10" loading="lazy"></div>
+
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=80" alt="College campus image 11" loading="lazy"></div>
+
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=900&q=80" alt="College campus image 12" loading="lazy"></div>
+
+</div>
+
+</section>
+
+
+<!-- ================= SPORTS ================= -->
+
+<section>
+
+<div class="section-title reveal">
+<small>SPORTS</small>
+<h2>Sports Activities</h2>
+<p>Fitness, teamwork and competitive spirit.</p>
+</div>
+
+<div class="gallery-grid reveal">
+
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=900&q=80" alt="College campus image 13" loading="lazy"></div>
+
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=900&q=80" alt="College campus image 14" loading="lazy"></div>
+
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=900&q=80" alt="College campus image 15" loading="lazy"></div>
+
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1547347298-4074fc3086f0?auto=format&fit=crop&w=900&q=80" alt="College campus image 16" loading="lazy"></div>
+
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=900&q=80" alt="College campus image 17" loading="lazy"></div>
+
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=900&q=80" alt="College campus image 18" loading="lazy"></div>
+
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=900&q=80" alt="College campus image 19" loading="lazy"></div>
+
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=900&q=80" alt="College campus image 20" loading="lazy"></div>
+
+</div>
+
+</section>
+
+
+<!-- ================= CLASSES ================= -->
+
+<section id="classes">
+
+<div class="section-title reveal">
+<small>ACADEMIC FACILITIES</small>
+<h2>Our Classes & Labs</h2>
+<p>Modern learning spaces for students.</p>
+</div>
+
+<div class="class-grid reveal">
+
+<div class="class-card">
+<img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80" alt="College campus image 21" loading="lazy">
+<div class="class-info">
+<h3>BCA Classroom</h3>
+<span class="room">Room No. 101</span>
+</div>
+</div>
+
+<div class="class-card">
+<img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=80" alt="College campus image 22" loading="lazy">
+<div class="class-info">
+<h3>BBA Classroom</h3>
+<span class="room">Room No. 102</span>
+</div>
+</div>
+
+<div class="class-card">
+<img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80" alt="College campus image 23" loading="lazy">
+<div class="class-info">
+<h3>B.Com Classroom</h3>
+<span class="room">Room No. 103</span>
+</div>
+</div>
+
+<div class="class-card">
+<img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80" alt="College campus image 24" loading="lazy">
+<div class="class-info">
+<h3>MBA Classroom</h3>
+<span class="room">Room No. 201</span>
+</div>
+</div>
+
+<div class="class-card">
+<img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=80" alt="College campus image 25" loading="lazy">
+<div class="class-info">
+<h3>MCA Classroom</h3>
+<span class="room">Room No. 202</span>
+</div>
+</div>
+
+<div class="class-card">
+<img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=900&q=80" alt="College campus image 26" loading="lazy">
+<div class="class-info">
+<h3>Computer Lab</h3>
+<span class="room">Room No. 203</span>
+</div>
+</div>
+
+</div>
+</section>
+
+
+<!-- ================= FACULTY ================= -->
+
+<section class="faculty" id="faculty">
+
+<div class="section-title reveal">
+<small>OUR FACULTY</small>
+<h2>Meet Our Teachers</h2>
+<p>Experienced mentors guiding students toward success.</p>
+</div>
+
+<div class="faculty-grid reveal">
+
+<!-- 1 -->
+<div class="teacher">
+<img src="https://randomuser.me/api/portraits/men/32.jpg" alt="College campus image 27" loading="lazy">
+<div class="teacher-info">
+<h3>Dr. Rajesh Sharma</h3>
+<div class="designation">Professor</div>
+<p><b>Qualification:</b> MCA, Ph.D.</p>
+<p><b>Teaches:</b> Programming, DBMS, Software Engineering</p>
+<p><b>Experience:</b> 12+ Years</p>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="teacher">
+<img src="https://randomuser.me/api/portraits/women/44.jpg" alt="College campus image 28" loading="lazy">
+<div class="teacher-info">
+<h3>Dr. Priya Verma</h3>
+<div class="designation">Professor</div>
+<p><b>Qualification:</b> MBA, Ph.D.</p>
+<p><b>Teaches:</b> Marketing, HR, Management</p>
+<p><b>Experience:</b> 10+ Years</p>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="teacher">
+<img src="https://randomuser.me/api/portraits/men/45.jpg" alt="College campus image 29" loading="lazy">
+<div class="teacher-info">
+<h3>Prof. Amit Patel</h3>
+<div class="designation">Assistant Professor</div>
+<p><b>Qualification:</b> M.Com, NET</p>
+<p><b>Teaches:</b> Accounting, Taxation, Business Law</p>
+<p><b>Experience:</b> 8+ Years</p>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="teacher">
+<img src="https://randomuser.me/api/portraits/women/65.jpg" alt="College campus image 30" loading="lazy">
+<div class="teacher-info">
+<h3>Prof. Neha Singh</h3>
+<div class="designation">Assistant Professor</div>
+<p><b>Qualification:</b> MBA, NET</p>
+<p><b>Teaches:</b> Economics, HRM</p>
+<p><b>Experience:</b> 7+ Years</p>
+</div>
+</div>
+
+<!-- 5 -->
+<div class="teacher">
+<img src="https://randomuser.me/api/portraits/men/52.jpg" alt="College campus image 31" loading="lazy">
+<div class="teacher-info">
+<h3>Prof. Rahul Mehta</h3>
+<div class="designation">Assistant Professor</div>
+<p><b>Qualification:</b> MCA, NET</p>
+<p><b>Teaches:</b> Java, Python, AI & ML</p>
+<p><b>Experience:</b> 9+ Years</p>
+</div>
+</div>
+
+<!-- 6 -->
+<div class="teacher">
+<img src="https://randomuser.me/api/portraits/women/33.jpg" alt="College campus image 32" loading="lazy">
+<div class="teacher-info">
+<h3>Prof. Anjali Gupta</h3>
+<div class="designation">Assistant Professor</div>
+<p><b>Qualification:</b> M.Com, NET</p>
+<p><b>Teaches:</b> Finance, Statistics, Accounting</p>
+<p><b>Experience:</b> 6+ Years</p>
+</div>
+</div>
+
+<!-- 7 -->
+<div class="teacher">
+<img src="https://randomuser.me/api/portraits/men/68.jpg" alt="College campus image 33" loading="lazy">
+<div class="teacher-info">
+<h3>Prof. Vikram Joshi</h3>
+<div class="designation">Assistant Professor</div>
+<p><b>Qualification:</b> MCA</p>
+<p><b>Teaches:</b> C, C++, Data Structures</p>
+<p><b>Experience:</b> 8+ Years</p>
+</div>
+</div>
+
+<!-- 8 -->
+<div class="teacher">
+<img src="https://randomuser.me/api/portraits/women/48.jpg" alt="College campus image 34" loading="lazy">
+<div class="teacher-info">
+<h3>Prof. Riya Malhotra</h3>
+<div class="designation">Assistant Professor</div>
+<p><b>Qualification:</b> MBA</p>
+<p><b>Teaches:</b> Marketing, Entrepreneurship</p>
+<p><b>Experience:</b> 6+ Years</p>
+</div>
+</div>
+
+<!-- 9 -->
+<div class="teacher">
+<img src="https://randomuser.me/api/portraits/men/61.jpg" alt="College campus image 35" loading="lazy">
+<div class="teacher-info">
+<h3>Prof. Sandeep Kumar</h3>
+<div class="designation">Assistant Professor</div>
+<p><b>Qualification:</b> MCA, NET</p>
+<p><b>Teaches:</b> Networking, Cloud Computing</p>
+<p><b>Experience:</b> 9+ Years</p>
+</div>
+</div>
+
+<!-- 10 -->
+<div class="teacher">
+<img src="https://randomuser.me/api/portraits/women/51.jpg" alt="College campus image 36" loading="lazy">
+<div class="teacher-info">
+<h3>Prof. Pooja Sharma</h3>
+<div class="designation">Assistant Professor</div>
+<p><b>Qualification:</b> M.Com</p>
+<p><b>Teaches:</b> Accounting, Economics</p>
+<p><b>Experience:</b> 7+ Years</p>
+</div>
+</div>
+
+<!-- 11 -->
+<div class="teacher">
+<img src="https://randomuser.me/api/portraits/men/40.jpg" alt="College campus image 37" loading="lazy">
+<div class="teacher-info">
+<h3>Prof. Arjun Verma</h3>
+<div class="designation">Assistant Professor</div>
+<p><b>Qualification:</b> MCA</p>
+<p><b>Teaches:</b> Web Development, Python</p>
+<p><b>Experience:</b> 7+ Years</p>
+</div>
+</div>
+
+<!-- 12 -->
+<div class="teacher">
+<img src="https://randomuser.me/api/portraits/women/25.jpg" alt="College campus image 38" loading="lazy">
+<div class="teacher-info">
+<h3>Prof. Kavita Jain</h3>
+<div class="designation">Assistant Professor</div>
+<p><b>Qualification:</b> MBA, NET</p>
+<p><b>Teaches:</b> HRM, Business Communication</p>
+<p><b>Experience:</b> 8+ Years</p>
+</div>
+</div>
+
+<!-- 13 -->
+<div class="teacher">
+<img src="https://randomuser.me/api/portraits/men/22.jpg" alt="College campus image 39" loading="lazy">
+<div class="teacher-info">
+<h3>Prof. Manish Gupta</h3>
+<div class="designation">Assistant Professor</div>
+<p><b>Qualification:</b> MCA</p>
+<p><b>Teaches:</b> Operating Systems, C++</p>
+<p><b>Experience:</b> 7+ Years</p>
+</div>
+</div>
+
+<!-- 14 -->
+<div class="teacher">
+<img src="https://randomuser.me/api/portraits/women/68.jpg" alt="College campus image 40" loading="lazy">
+<div class="teacher-info">
+<h3>Prof. Sneha Kapoor</h3>
+<div class="designation">Assistant Professor</div>
+<p><b>Qualification:</b> MBA, NET</p>
+<p><b>Teaches:</b> Business Management, HR</p>
+<p><b>Experience:</b> 8+ Years</p>
+</div>
+</div>
+
+<!-- 15 -->
+<div class="teacher">
+<img src="https://randomuser.me/api/portraits/men/75.jpg" alt="College campus image 41" loading="lazy">
+<div class="teacher-info">
+<h3>Prof. Deepak Soni</h3>
+<div class="designation">Assistant Professor</div>
+<p><b>Qualification:</b> M.Com, NET</p>
+<p><b>Teaches:</b> Corporate Accounting, Tax</p>
+<p><b>Experience:</b> 9+ Years</p>
+</div>
+</div>
+
+<!-- 16 -->
+<div class="teacher">
+<img src="https://randomuser.me/api/portraits/women/56.jpg" alt="College campus image 42" loading="lazy">
+<div class="teacher-info">
+<h3>Prof. Meena Joshi</h3>
+<div class="designation">Assistant Professor</div>
+<p><b>Qualification:</b> M.Com</p>
+<p><b>Teaches:</b> Statistics, Finance</p>
+<p><b>Experience:</b> 6+ Years</p>
+</div>
+</div>
+
+<!-- 17 -->
+<div class="teacher">
+<img src="https://randomuser.me/api/portraits/men/35.jpg" alt="College campus image 43" loading="lazy">
+<div class="teacher-info">
+<h3>Prof. Nitin Shah</h3>
+<div class="designation">Assistant Professor</div>
+<p><b>Qualification:</b> MCA, NET</p>
+<p><b>Teaches:</b> Java, Database</p>
+<p><b>Experience:</b> 10+ Years</p>
+</div>
+</div>
+
+<!-- 18 -->
+<div class="teacher">
+<img src="https://randomuser.me/api/portraits/women/35.jpg" alt="College campus image 44" loading="lazy">
+<div class="teacher-info">
+<h3>Prof. Aarti Mehta</h3>
+<div class="designation">Assistant Professor</div>
+<p><b>Qualification:</b> MBA</p>
+<p><b>Teaches:</b> Marketing, Entrepreneurship</p>
+<p><b>Experience:</b> 6+ Years</p>
+</div>
+</div>
+
+<!-- 19 -->
+<div class="teacher">
+<img src="https://randomuser.me/api/portraits/men/55.jpg" alt="College campus image 45" loading="lazy">
+<div class="teacher-info">
+<h3>Prof. Rakesh Yadav</h3>
+<div class="designation">Assistant Professor</div>
+<p><b>Qualification:</b> MCA</p>
+<p><b>Teaches:</b> Computer Networks, Web</p>
+<p><b>Experience:</b> 8+ Years</p>
+</div>
+</div>
+
+<!-- 20 -->
+<div class="teacher">
+<img src="https://randomuser.me/api/portraits/women/45.jpg" alt="College campus image 46" loading="lazy">
+<div class="teacher-info">
+<h3>Prof. Shalini Rao</h3>
+<div class="designation">Assistant Professor</div>
+<p><b>Qualification:</b> MBA, NET</p>
+<p><b>Teaches:</b> Management, Communication</p>
+<p><b>Experience:</b> 7+ Years</p>
+</div>
+</div>
+
+</div>
+</section>
+
+
+<!-- ================= ADMISSION ================= -->
+
+<section class="admission" id="admission">
+
+<div class="section-title reveal">
+<small style="color:#ffd36a;">ADMISSIONS</small>
+<h2 style="color:white;">Admission Inquiry</h2>
+<p style="color:#e4ebff;">Start your journey with us.</p>
+</div>
+
+<div class="admission-box reveal">
+
+<form action="https://formspree.io/f/xaennzvv" method="post" id="admissionForm" onsubmit="submitForm(event)">
+
+<div class="form-grid">
+
+<input class="input" type="text" placeholder="Student Name" required>
+
+<input class="input" type="tel" placeholder="Mobile Number" required>
+
+<input class="input" type="email" placeholder="Email Address" required>
+
+<select class="input" required>
+<option value="">Select Course</option>
+<option>BCA</option>
+<option>BBA</option>
+<option>B.Com</option>
+<option>MBA</option>
+<option>MCA</option>
+</select>
+
+<textarea class="input full" placeholder="Your Message / Query"></textarea>
+
+<button class="btn btn-primary full" type="submit">
+<i class="fa-solid fa-paper-plane"></i>
+&nbsp; Send Admission Inquiry
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+<div class="section-title reveal">
+<small>CONTACT US</small>
+<h2>Visit Our Campus</h2>
+</div>
+
+<div class="contact-grid reveal">
+
+<div class="contact-card">
+<i class="fa-solid fa-location-dot"></i>
+<h3>Address</h3>
+<p>
+Satya Sai Square,<br>
+Vijay Nagar, Indore,<br>
+Madhya Pradesh
+</p>
+</div>
+
+<div class="contact-card">
+<i class="fa-solid fa-graduation-cap"></i>
+<h3>Institute</h3>
+<p>
+Shri RGP Gujrati<br>
+Professional Institute
+</p>
+</div>
+
+<div class="contact-card">
+<i class="fa-solid fa-building-columns"></i>
+<h3>Courses</h3>
+<p>
+BCA • BBA • B.Com<br>
+MBA • MCA
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+
+<h2>Shri RGP Gujrati Professional Institute</h2>
+
+<p>
+Empowering students with knowledge,
+skills and professional education for
+a successful future.
+</p>
+
+<div class="social-links">
+
+<!-- Instagram -->
+<a href="#" target="_blank" aria-label="Instagram">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+<!-- LinkedIn -->
+<a href="#" target="_blank" aria-label="LinkedIn">
+<i class="fa-brands fa-linkedin-in"></i>
+</a>
+
+</div>
+
+</div>
+
+<div>
+
+<h3>Quick Links</h3>
+
+<ul class="footer-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#faculty">Faculty</a></li>
+<li><a href="#admission">Admission</a></li>
+</ul>
+
+</div>
+
+<div>
+
+<h3>Our Courses</h3>
+
+<ul class="footer-links">
+<li>BCA</li>
+<li>BBA</li>
+<li>B.Com</li>
+<li>MBA</li>
+<li>MCA</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="copyright">
+© 2026 Shri RGP Gujrati Professional Institute. All Rights Reserved.
+</div>
+
+</footer>
+
+
+<!-- TOP BUTTON -->
+
+<button class="top" type="button" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+<i class="fa-solid fa-arrow-up"></i>
+</button>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+/* MOBILE MENU */
+
+function toggleMenu(){
+    const nav = document.getElementById("navLinks");
+    const menu = document.querySelector(".menu");
+    const isOpen = nav.classList.toggle("show");
+    menu.setAttribute("aria-expanded", String(isOpen));
+    menu.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+}
+
+
+/* COURSE DATA */
+
+const courseData = {
+
+BCA:[
+"Programming in C",
+"Data Structures",
+"Database Management System",
+"Web Development",
+"Java / Python",
+"Operating Systems",
+"Computer Networks",
+"Software Engineering"
+],
+
+BBA:[
+"Principles of Management",
+"Business Economics",
+"Financial Accounting",
+"Marketing Management",
+"Human Resource Management",
+"Business Communication",
+"Entrepreneurship",
+"Business Environment"
+],
+
+BCOM:[
+"Financial Accounting",
+"Corporate Accounting",
+"Business Law",
+"Business Economics",
+"Cost Accounting",
+"Taxation",
+"Auditing",
+"Business Statistics"
+],
+
+MBA:[
+"Management Principles",
+"Marketing Management",
+"Financial Management",
+"Human Resource Management",
+"Operations Management",
+"Business Analytics",
+"Strategic Management",
+"Entrepreneurship"
+],
+
+MCA:[
+"Advanced Programming",
+"Data Structures",
+"Database Management",
+"Software Engineering",
+"Computer Networks",
+"Cloud Computing",
+"Artificial Intelligence",
+"Machine Learning"
+]
+
+};
+
+
+/* COURSE MODAL */
+
+function openCourse(course){
+    const modal = document.getElementById("courseModal");
+    const title = document.getElementById("courseTitle");
+    const list = document.getElementById("subjectList");
+    const subjects = courseData[course] || [];
+
+    title.textContent = course + " - Course Subjects";
+    list.innerHTML = subjects.map(function(subject){
+        const item = document.createElement("div");
+        item.innerHTML = '<i class="fa-solid fa-book" aria-hidden="true"></i> ';
+        item.append(document.createTextNode(subject));
+        return item.outerHTML;
+    }).join("");
+
+    modal.classList.add("is-open");
+    document.body.classList.add("modal-open");
+    modal.querySelector(".close").focus();
+}
+
+function closeCourse(){
+    document.getElementById("courseModal").classList.remove("is-open");
+    document.body.classList.remove("modal-open");
+}
+
+
+document.getElementById("courseModal").addEventListener("click", function(event){
+    if(event.target === this){
+        closeCourse();
+    }
+});
+
+document.addEventListener("keydown", function(event){
+    if(event.key === "Escape"){
+        closeCourse();
+        document.getElementById("navLinks").classList.remove("show");
+        document.querySelector(".menu").setAttribute("aria-expanded", "false");
+    }
+});
+
+
+/* ADMISSION FORM */
+
+function submitForm(event){
+
+    event.preventDefault();
+
+    alert(
+        "Thank you for your Admission Inquiry!\\n\\n" +
+        "Our admission team will contact you soon."
+    );
+
+    event.target.reset();
+}
+
+
+/* SCROLL ANIMATION */
+
+const reveals=document.querySelectorAll(".reveal");
+
+function revealOnScroll(){
+
+    reveals.forEach(function(element){
+
+        const windowHeight=window.innerHeight;
+        const elementTop=element.getBoundingClientRect().top;
+
+        if(elementTop < windowHeight - 80){
+            element.classList.add("active");
+        }
+
+    });
+}
+
+window.addEventListener("scroll",revealOnScroll);
+
+revealOnScroll();
+
+
+/* CLOSE MOBILE MENU */
+
+document.querySelectorAll(".nav-links a").forEach(function(link){
+
+    link.addEventListener("click",function(){
+
+        document.getElementById("navLinks").classList.remove("show");
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
