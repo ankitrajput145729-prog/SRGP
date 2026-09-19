@@ -1534,36 +1534,57 @@ skills required for their careers.
 
 <div class="admission-box reveal">
 
-<form action="https://formspree.io/f/xaennzvv" method="get" id="admissionForm" onsubmit="submitForm(event)">
+<form action="https://formspree.io/f/xaennzvv" method="POST">
 
 <div class="form-grid">
 
-<input class="input" type="text" placeholder="Student Name" required>
+<input
+    class="input"
+    type="text"
+    name="name"
+    placeholder="Student Name"
+    required
+>
 
-<input class="input" type="tel" placeholder="Mobile Number" required>
+<input
+    class="input"
+    type="tel"
+    name="phone"
+    placeholder="Mobile Number"
+    required
+>
 
-<input class="input" type="email" placeholder="Email Address" required>
+<input
+    class="input"
+    type="email"
+    name="email"
+    placeholder="Email Address"
+    required
+>
 
-<select class="input" required>
-<option value="">Select Course</option>
-<option>BCA</option>
-<option>BBA</option>
-<option>B.Com</option>
-<option>MBA</option>
-<option>MCA</option>
+<select class="input" name="course" required>
+    <option value="">Select Course</option>
+    <option value="BCA">BCA</option>
+    <option value="BBA">BBA</option>
+    <option value="B.Com">B.Com</option>
+    <option value="MBA">MBA</option>
+    <option value="MCA">MCA</option>
 </select>
 
-<textarea class="input full" placeholder="Your Message / Query"></textarea>
+<textarea
+    class="input full"
+    name="message"
+    placeholder="Your Message / Query"
+></textarea>
 
 <button class="btn btn-primary full" type="submit">
-<i class="fa-solid fa-paper-plane"></i>
-&nbsp; Send Admission Inquiry
+    <i class="fa-solid fa-paper-plane"></i>
+    &nbsp; Send Admission Inquiry
 </button>
 
 </div>
 
 </form>
-
 </div>
 
 </section>
